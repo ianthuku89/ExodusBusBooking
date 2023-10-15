@@ -1,6 +1,10 @@
 <style>
     body{
-        background-color: black;
+        background: #466368;
+        background: linear-gradient(to right bottom, #648880, #293f50);
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 6px;
+        height: 120px;
         
         color: white;
         
@@ -8,32 +12,69 @@
 
 
     .container{
-        border: solid;
-        border-color: white;
-        width: 400px;
-        align-items: center;
-        justify-content: center;
+        border: none;
+        
+        height: 650px;
+        
+        width: 250px;
+        
         text-align: center;
         position: absolute;
-        margin-left: 450px;
-        margin-top: 50px;
+       
+        
+        border: solid;
+        border-color: black;
         
        
-        background-color: black;
+        
         
        
        
     }
 
     .img{
-        width:100px;
-       }
-    .Entry{
-        text-align: left;
-        display:inline-block;
+        width:70px;
+        border-radius: 50px;
+        object-position: left;
+       
         border: solid;
         border-color: red;
+       }
+
+    .header{
+        text-align: left;
+    }
+    .Entry{
+        text-align: left;
+        
+        display:inline-block;
+        border: none;
+        
         width: 400px;
+    }
+
+    .name{
+        display: flex;
+        border: none;
+       
+        flex: 1;
+        justify-content:space-between;
+    }
+
+    .phone{
+        display: flex;
+        border: none;
+        
+        flex: 1;
+        justify-content:space-between;
+    }
+
+    .email{
+        display: flex;
+        border: none;
+        
+        flex: 1;
+        justify-content:space-between;
     }
 
     .entrybar{
@@ -47,14 +88,16 @@
     
         .button{
             width: 100px;
-            margin-left: 100px;
+            margin-left: 0px;
             margin-top: 10px;
             color: white;
             background-color: blue;
             border: none;
             border-radius: 20px;
-            padding-top: 5px;
-            padding-bottom: 5px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-bottom: 5px;
+            object-position: center;
             
         }
     
@@ -79,24 +122,27 @@
             <div class="container">
                 <img class="img" src="Pics/logo.JPEG">
                 <p class="header">
-                    Exodus Bus Booking System
+                    Ian Thuku
                 </p>
                      <div class="Entry">
-                        <div>
+                        <div class="name">
                             <p>
                                 Enter name
                             </p>
-                            <input class="entrybar"   type="text"></div>
-                        
-                        
-                        <p>
-                            Phone
-                        </p>
-                        <input class="entrybar"   type="text">
-                        <p>
-                            Email
-                        </p>
-                        <input class="entrybar"   type="text">
+                            </div>
+                            <div class="phone">
+                                <p>
+                                    Phone
+                                </p>
+                                
+
+                            </div>
+                            <div class="email">
+                                <p>
+                                    Email
+                                </p>
+                                
+                            </div>
                         <button class="button" type="button">
                             Submit
                         </button>
